@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/style.css">
   <script src="js/jquery.js"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round" rel="stylesheet"> <link rel="stylesheet" href="newiine_app/newiine.css">
 </head>
 
 <body>
@@ -44,7 +45,21 @@
               <li><a href="#about">about</a></li>
               <li><a href="#link">link</a></li>
             </ul>
-            <input name="submit" type="submit" value="clap!">
+            <!-- いいねボタン改ここから -->
+<button type="submit" class="newiine_btn" data-iinename="拍手">
+  <span class="material-icons-round">favorite</span>
+  <span class="newiine_count"></span>拍手
+
+   <!-- お礼メッセージここから -->
+   <div class="newiine_thanks newiine_thanks_up" style="display:none;">
+   <div class="newiine_box">
+   <img src="newiine_app/example.jpg" alt="THANK YOU!">
+   <p>ありがとうございます！</p>
+   </div>
+   </div>
+   <!-- お礼メッセージここまで -->
+</button>
+<!-- いいねボタン改ここまで -->
           </nav>
 
         </div>
@@ -175,6 +190,7 @@ suo_yu@hotmail.com</p></div>
 
 <script src="js/scrollbooster.min.js"></script>
 <script src="js/fuwaimg.js"></script>
+<script src="newiine_app/newiine.js"></script>
 </body>
 
 </html>
